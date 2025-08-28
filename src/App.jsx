@@ -1,13 +1,18 @@
-
+import NavBar from "./components/Navbar";
+import GptModel from "./components/gptmodel";
 function App() {
-
   return (
     <>
-  <h1 className="text-3xl font-bold underline text-red-500">
-          Hello, Tailwind CSS 4!
-        </h1>
+      <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-200 min-h-screen font-sans">
+        <NavBar />
+
+        <main className="max-w-6xl mx-auto p-8 space-y-10">
+          <GptModel />
+
+        </main>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
